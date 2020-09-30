@@ -3,21 +3,21 @@ package exercises;
 import java.util.Scanner;
 
 public class Exercise1 {
-
 	public static void main(String[] args) {
+		new Exercise1().question1();
 	}
 
-	public static void question1() {
+	public void question1() {
 		System.out.println("Hello world!");
 	}
 
-	public static void question2() {
+	public void question2() {
 		Scanner s = new Scanner(System.in);
 		String name = s.nextLine();	
 		System.out.println("Hello " + name);
 	}
 	
-	public static void question3() {
+	public void question3() {
 		Scanner s = new Scanner(System.in);
 		int value1 = Integer.parseInt(s.nextLine());
 		int value2 = Integer.parseInt(s.nextLine());
@@ -25,7 +25,7 @@ public class Exercise1 {
 		System.out.println("The total is " + total);
 	}
 
-	public static void question4() {
+	public void question4() {
 		Scanner s = new Scanner(System.in);
 		int total = 0;
 		while (true) {
@@ -36,7 +36,7 @@ public class Exercise1 {
 		System.out.println("The total is " + total);
 	}
 
-	public static void question5() {
+	public void question5() {
 		Scanner s = new Scanner(System.in);
 		float total = 0;
 		while (true) {
@@ -47,7 +47,7 @@ public class Exercise1 {
 		System.out.println("The total is " + total);
 	}
 
-	public static void question6() {
+	public void question6() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter number of pounds:");
 		float value = Float.parseFloat(s.nextLine());
@@ -63,7 +63,7 @@ public class Exercise1 {
 		}
 	}
 
-	public static void question7() {
+	public void question7() {
 		
 	}
 }

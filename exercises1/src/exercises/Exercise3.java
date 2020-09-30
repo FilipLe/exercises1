@@ -3,33 +3,35 @@ package exercises;
 import tbs.SimpleGfx;
 
 public class Exercise3 {
+	SimpleGfx gfx = SimpleGfx.startup(400, 400);
+
 	public static void main(String[] args) {
-		question1(); // Write the question you want to test here.
+		new Exercise3().question1(); // Write the question you want to test here.
 	}
 	
-	public static void question1() {
-		SimpleGfx s = SimpleGfx.startup(640, 480);
-		s.setColour(0x0000f0);
-		s.clear();		
+	public void question1() {
+		gfx.setColour(0x000000);
+		gfx.clear();		
+		gfx.setColour(0xffffff);		
 	}
 	
-	public static void question2() {
+	public void question2() {
 		
 	}
 
-	public static void question3() {
+	public void question3() {
 		
 	}
 
-	public static void question4() {
+	public void question4() {
 		
 	}
 
-	public static void question5() {
+	public void question5() {
 		
 	}
 
-	public static void question6() {
+	public void question6() {
 		
 	}
 }

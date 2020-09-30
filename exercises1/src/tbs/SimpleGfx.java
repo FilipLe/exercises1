@@ -45,6 +45,12 @@ public class SimpleGfx extends JPanel {
 		return screen;
 	}
 	
+	public static SimpleGfx startup(int width, int height, FrameListener frameListener) {
+		SimpleGfx s = startup(width, height);
+		s.addFrameListener(frameListener);
+		return s;
+	}
+	
 	private SimpleGfx(int width, int height) {
 		this.width = width;
 		this.height = height;
@@ -57,8 +63,9 @@ public class SimpleGfx extends JPanel {
 		setColour(0);
 	}
 	
-	public void addFrameListener(FrameListener f) {
+	public SimpleGfx addFrameListener(FrameListener f) {
 		frameListeners.add(f);
+		return this;
 	}
 	
 	public void removeFrameListener(FrameListener f) {
