@@ -62,8 +62,4 @@ public class Exercise1 {
 			System.out.println("In zloty:" + (value * 4.86));
 		}
 	}
-
-	public void question7() {
-		
-	}
 }

@@ -10,9 +10,6 @@ public class Exercise3 {
 	}
 	
 	public void question1() {
-		gfx.setColour(0x000000);
-		gfx.clear();		
-		gfx.setColour(0xffffff);		
 	}
 	
 	public void question2() {

@@ -15,8 +15,6 @@ public class Exercise4 implements FrameListener {
 	}
 	
 	public void question1() {
-		gfx.setColour(0x000000);
-		gfx.clear();		
 	}
 	
 	public void question2() {
@@ -29,5 +27,9 @@ public class Exercise4 implements FrameListener {
 	}
 	
 	public void question5() {
+	}
+	
+	public void question6() {
+		
 	}
 }
