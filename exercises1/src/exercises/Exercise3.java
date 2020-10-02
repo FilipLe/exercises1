@@ -11,8 +11,8 @@ public class Exercise3 {
 		//new Exercise3().question5();
 		//new Exercise3().question6();
 		//new Exercise3().question7();
-		new Exercise3().question8();
-		//new Exercise3().question9();
+		//new Exercise3().question8();
+		new Exercise3().question9();
 	}
 	
 	public void question3() {
@@ -71,13 +71,13 @@ public class Exercise3 {
 	}
 
 	public void question8() {
-		//Draw 10 Horizontal lines
+		//Draw 11 Horizontal lines
 		for(int y = 10; y < 21; y++){
 			gfx.setColour(0x000000);
 			for(int x = 100; x < 200; x++)
 				gfx.plot(x, y*10);
 		}
-		//Draw 10 vertical lines
+		//Draw 11 vertical lines
 		for(int x = 10; x < 21; x++){
 			gfx.setColour(0x000000);
 			for(int y = 100; y < 200; y++)
