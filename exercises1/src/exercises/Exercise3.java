@@ -57,7 +57,7 @@ public class Exercise3 {
 	public void question7() {
 		//Diagonal line 1
 		//if points positive -->(0,0),(1,1),... -->line goes upwards
-		//however, computer graphics, y-coord is inverted
+		//however, in 2D (not 3D) computer graphics, y-coord is inverted
 		//that's why here line goes downwards
 		gfx.setColour(0x000000);
 		for(int x1 = 0; x1 < 100; x1++)
