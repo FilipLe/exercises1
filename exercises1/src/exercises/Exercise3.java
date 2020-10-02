@@ -3,7 +3,7 @@ package exercises;
 import tbs.SimpleGfx;
 
 public class Exercise3 {
-	SimpleGfx gfx = SimpleGfx.startup(400, 400);
+	SimpleGfx gfx = SimpleGfx.startup(400, 400);//400px wide x 400px length
 
 	public static void main(String[] args) {
 		new Exercise3().question1(); // Write the question you want to test here.
