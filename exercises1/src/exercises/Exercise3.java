@@ -6,13 +6,13 @@ public class Exercise3 {
 	SimpleGfx gfx = SimpleGfx.startup(400, 400);//400px wide x 400px length
 
 	public static void main(String[] args) {
-		new Exercise3().question3(); // Write the question you want to test here.
-		new Exercise3().question4();
-		new Exercise3().question5();
-		new Exercise3().question6();
+		//new Exercise3().question3(); // Write the question you want to test here.
+		//new Exercise3().question4();
+		//new Exercise3().question5();
+		//new Exercise3().question6();
 		new Exercise3().question7();
-		new Exercise3().question8();
-		new Exercise3().question9();
+		//new Exercise3().question8();
+		//new Exercise3().question9();
 	}
 	
 	public void question3() {
@@ -33,11 +33,41 @@ public class Exercise3 {
 	}
 
 	public void question6() {
+		//Horizontal line 1
+		gfx.setColour(0x000000);
+		for(int x1 = 100; x1 < 200; x1++)
+			gfx.plot(x1, 100);
 		
+		//Horizontal line 2
+		gfx.setColour(0x000000);
+		for(int x2 = 100; x2 < 200; x2++)
+			gfx.plot(x2, 200);
+		
+		//Vertical line 1
+		gfx.setColour(0x000000);
+		for(int y1 = 100; y1 < 200; y1++)
+			gfx.plot(100, y1);
+		
+		//Vertical line 2
+		gfx.setColour(0x000000);
+		for(int y2 = 100; y2 < 200; y2++)
+			gfx.plot(200, y2);
 	}
 
 	public void question7() {
+		//Diagonal line 1
+		//if points positive -->(0,0),(1,1),... -->line goes upwards
+		//however, computer graphics, y-coord is inverted
+		//that's why here line goes downwards
+		gfx.setColour(0x000000);
+		for(int x1 = 0; x1 < 100; x1++)
+			gfx.plot(x1, x1);
 		
+		//Diagonal line 1
+		gfx.setColour(0x000000);
+		for(int x1 = 0; x1 < 100; x1++)
+			//to make it go upwards, invert the y-axis
+			gfx.plot(x1, -x1+100);
 	}
 
 	public void question8() {
