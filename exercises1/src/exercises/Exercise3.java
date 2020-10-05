@@ -85,7 +85,16 @@ public class Exercise3 {
 		}
 	}
 	public void question9() {
-		
+		int h = 20;
+		int k = 20;
+		int x;
+		int y;
+		int radius = 20;
+		for(int theta=0;theta<361;theta++){
+			x = (int)(h + radius*Math.cos(theta));
+			y = (int)(k + radius*Math.sin(theta));
+			gfx.plot(x, y);
+		}
 	}
 }
 
