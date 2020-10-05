@@ -85,13 +85,25 @@ public class Exercise3 {
 		}
 	}
 	public void question9() {
+		//x-coord of center
 		int h = 20;
+		//y-coord of center
 		int k = 20;
+		//assign var for x-coord for points on circle
 		int x;
+		//assign var for y-coord for points on circle
 		int y;
+		//assign radius of 20 pixels
 		int radius = 20;
+		//loop repeat 360 times, as a circle has 360 degrees
 		for(int theta=0;theta<361;theta++){
+			//In Trigonometric unit circle, the x-coord is on the cos-axis
+			//to find x val of point on the circle:
+			//x-coord of center + distance in x axis to point (x,y) on circle, in terms of x
+			//to find distance to x value-->cos(angle)
+			//but in unit circle, radius is 1. we want radius 20 --> multiply by radius
 			x = (int)(h + radius*Math.cos(theta));
+			//the same step for y-axis, but with sin instead
 			y = (int)(k + radius*Math.sin(theta));
 			gfx.plot(x, y);
 		}
